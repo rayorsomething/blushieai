@@ -19,4 +19,9 @@ def chatter(resp):
                     answer = c_b.single_exchange(user_input)
                     bot.sendMessage(message['channel_id'], answer)
 
+from subprocess import Popen, PIPE
+
+p = Popen([sys.executable, "-m", "playwright", "install"], stdin=PIPE, stdout=PIPE, stderr=PIPE)
+
+
 bot.gateway.run(auto_reconnect=True)
