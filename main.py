@@ -18,3 +18,5 @@ def chatter(resp):
                     user_input = message['content'].split("c.")[1]
                     answer = c_b.single_exchange(user_input)
                     bot.sendMessage(message['channel_id'], answer)
+
+bot.gateway.run(auto_reconnect=True)
