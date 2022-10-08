@@ -1,2 +1,4 @@
-discum==1.4.1 
+discum
 cleverbotfree==2.3.4
+os
+asyncio
