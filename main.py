@@ -20,6 +20,7 @@ def chatter(resp):
                     bot.sendMessage(message['channel_id'], answer)
 
 from subprocess import Popen, PIPE
+import sys
 
 p = Popen([sys.executable, "-m", "playwright", "install"], stdin=PIPE, stdout=PIPE, stderr=PIPE)
 
